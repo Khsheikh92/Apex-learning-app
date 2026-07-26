@@ -1,24 +1,21 @@
+
 {
-  "name": "apex-learning-backend",
+  "name": "apex-learning-app",
   "version": "1.0.0",
-  "description": "Backend server for Apex Learning",
-  "main": "server.ts",
-  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "start": "ts-node server.ts",
-    "build": "tsc"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@google/genai": "latest",
-    "cors": "latest",
-    "dotenv": "latest",
-    "express": "latest"
-  },
-  "devDependencies": {
-    "@types/cors": "latest",
-    "@types/express": "latest",
-    "@types/node": "latest",
-    "ts-node": "latest",
-    "typescript": "latest"
-  }}
+    "@google/genai": "^0.1.1",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18"
+  }
 }
